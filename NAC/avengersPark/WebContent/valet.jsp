@@ -1,0 +1,103 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url("img/logo4.png");
+        background-size: 90px 100px;
+        background-color: #464646;
+        height: 100vh;
+        position: relative;
+        margin: 0px;
+    }
+    #cima{
+        background: #2b2b2b;
+        margin: 0px;
+        text-align: center;
+    } #cima > img {
+        height: 90%;
+    }
+    footer{
+        color: white;
+        margin:0px;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        padding: 10px 0px;
+        background-color: #2b2b2b;
+        border-top: white;
+    }
+    #fundo {  
+        height: 500px;
+        padding: 60px;
+    }
+    #frm_p {
+        background: #2b2b2b;
+        height: 110%;
+        margin: 60px;
+        padding: 5px 180px;
+    }
+    #frm_p > button {
+        float: right;
+        background: #5a5a5a;
+        border: 0px;
+        color: white;
+        padding: 10px 40px;
+        cursor: pointer;
+        outline: none; 
+    } #frm_p > p {
+        margin: 0px;
+        margin-top: 20px;
+        color: white;
+        padding: 0px 10px;
+        text-decoration: underline;
+    } #frm_p > input {
+        width: 60%;
+        padding: 10px;    
+        border: 0;
+        color: white;
+        background: #5a5a5a;
+        outline: none;
+    } #frm_p > h1 {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+<body>
+    <p id="cima"><img src="img/logo2.png" alt="Avengers" height="80px" width="70px" class="imagem"></p>
+    <div id="fundo">
+        <form action="pagar" method="post" id="frm_p">
+            <h1>VALET</h1>
+            
+            <p>Placa</p>
+            <input type="text" readonly="true" name="placa" value="<%=request.getAttribute("placa")%>">
+            <p>Marca</p>
+            <input type="text" readonly="true" name="marca" value="<%=request.getAttribute("marca")%>">
+            <p>Modelo</p>
+            <input type="text" readonly="true" name="modelo" value="<%=request.getAttribute("modelo")%>">
+            <p>Entrada</p>
+            <input type="text" readonly="true" name="entrada" value="<%=request.getAttribute("entrada")%>">
+            <p>Saida</p>
+            <input type="text" readonly="true" name="saida" value="<%=request.getAttribute("saida")%>">
+            <p>Total</p>
+            <input type="text" readonly="true" name="total" value="<%=request.getAttribute("total")%>">
+
+            <button>Pago</button> 
+
+        </form>
+
+    </div>
+    <footer>
+        <h5>Desenvolvido por S.H.I.E.L.D.&copy; 2019</h5>
+    </footer>
+</body>
+</html>

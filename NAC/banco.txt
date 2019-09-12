@@ -1,0 +1,26 @@
+create table USUARIO
+(
+    nome varchar(50),
+    email varchar2(40),
+    senha number
+);
+
+create table VEICULO
+(
+    placa varchar2(40),
+    marca varchar2(40), 
+    modelo varchar2(40),
+    entrada varchar2(30)
+    
+);
+
+create table VALET
+(
+    entrada varchar2(50),
+    saida varchar2(50),
+    preco NUMBER(8,2),
+    veiculo varchar2(20)
+);
+
+
+insert into USUARIO(nome, email, senha)values('Leoanardo', 'leonardo.pena95@gmail.com', 123);

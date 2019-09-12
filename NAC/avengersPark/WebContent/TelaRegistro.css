@@ -1,0 +1,115 @@
+img{
+    background: #2b2b2b;
+}
+.imagem{
+margin: auto;
+display: block;
+}
+
+header{
+    background: #2b2b2b;
+    padding: 10px;
+    margin: 0px;   
+}
+#cima{
+    background: #2b2b2b;
+    padding: 10px;
+    margin: 0px;
+}
+h3{
+    text-align: center; 
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+h4{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-style: initial;
+    font-size: 15px;
+}
+footer{
+    color: white;
+    margin:0px;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+    position: absolute;
+    bottom:0;
+    background-color: #2b2b2b;
+    border-top: white;
+}
+p{
+    color: white;
+    font-size: 15px;
+}
+body{
+    background-image: url("img/logo4.png");
+    background-size: 90px 100px;
+    background-color: #464646;
+    background: auto;
+    padding: 0px;
+    margin: 0px;
+}
+fieldset{
+    color: white;
+    margin: 70px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding:50px;
+    width: 500px;
+    background: #2b2b2b;
+    border: 0;
+
+}
+#p1{
+    float: left;
+    width: 65%;
+    overflow: hidden;
+}
+#p2{
+    overflow: hidden;
+}
+button{
+    float: right;
+    background: #5a5a5a;
+    border: 0px;
+    color: white;
+    padding: 10px 40px;
+    margin-top: 30px;  
+    margin-right: 6px;
+    position: relative;
+}
+button:hover{
+    background: #464646;
+  }
+  input{
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 0;
+    background: #5a5a5a;
+}
+::placeholder {
+    color: #9b9999;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    color: #868686;
+  }
+  
+  ::-ms-input-placeholder {
+    color: #868686;
+  }
+  textarea:focus, input:focus {
+    color: white;
+}
+input, select, textarea{
+    color: white;
+}
+
+#loog{
+    margin-top: 40px;
+    margin-bottom: 0%;
+}
